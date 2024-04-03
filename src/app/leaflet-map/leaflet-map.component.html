@@ -1,0 +1,24 @@
+<style>
+    #map{
+        height: 500px;
+        width: 600px;
+    }
+
+    .map-container{
+        border: 1px solid black;
+        width: max-content;
+    }
+</style>
+
+<div class="map-container">
+    <div id="map"></div>
+</div>
+
+<div>
+    lat: {{latlng.lat}} --- 
+    lang: {{latlng.lng}}
+</div>
+
+<div>
+    <button (click)="setMarker()">Set Marker</button>
+</div>

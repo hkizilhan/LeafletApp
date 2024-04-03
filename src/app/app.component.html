@@ -1,0 +1,19 @@
+<style>
+</style>
+
+
+<div style="padding-left: 50px;">
+    <h2>Leaflet Test Application</h2>
+
+    <a class="button" href="/api/download">Download JSON</a>
+</div>
+
+
+<div class="flex two">
+    <div style="width: 650px; padding-left: 50px;">
+        <leaflet-map [latlangs]="latlangs"></leaflet-map>
+    </div>
+    <div style="width: 900px; padding-left: 50px; overflow: scroll; height: 500px;">
+        <marker-list [latlangs]="latlangs"></marker-list>
+    </div>
+</div>

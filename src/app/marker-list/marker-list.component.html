@@ -1,0 +1,12 @@
+<h3>Marker List</h3>
+
+
+<article class="card" *ngFor="let latlang of latlangs">
+    <header>
+        Id: {{latlang.id}}
+        <button (click)="centerMarker(latlang)">{{latlang.lat}}-{{latlang.lng}}</button>
+        Date: {{latlang.datetime}}
+        <button (click)="deleteLatlang(latlang.id)" class="dangerous">Delete</button>
+    </header>
+</article>
+
